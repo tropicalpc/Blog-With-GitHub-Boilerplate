@@ -106,11 +106,4 @@ header | header
 cell 1 | cell 2
 cell 3 | cell 4
 
-## Link Card
 
-[links]
-[AlanDecode](https://www.imalan.cn)+(https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&r=G&d=)
-[/links]
-
-
-[1]: ./images/1463017562.jpg
