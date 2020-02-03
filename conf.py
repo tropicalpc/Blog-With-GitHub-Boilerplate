@@ -21,12 +21,12 @@ enable_jsdelivr = {
 # 站点设置
 site_name = "烟雾缭绕的小酒馆"
 site_logo = "${static_prefix}logo.png"
-site_build_date = "2019-12-18T16:51+08:00"
+site_build_date = "2020-02-03T12:00+08:00"
 author = "雨眠纸"
 email = "panchen57@live.com"
 author_homepage = "https://tropicalpc.github.io/Blog-With-GitHub-Boilerplate/"
 description = "活着其实很好，再吃一颗苹果"
-key_words = ['Maverick', '熊猫小A', 'Galileo', 'blog']
+key_words = ['Maverick', '雨眠纸', 'Luicus', 'blog']
 language = 'zh-CN'
 external_links = [
     {
@@ -47,6 +47,16 @@ nav = [
         "target": "_self"
     },
     {
+        "name": "技术文档",
+        "url": "${site_prefix}",
+        "target": "_self"
+    },
+    {
+        "name": "随笔",
+        "url": "${site_prefix}",
+        "target": "_self"
+    },
+    {
         "name": "归档",
         "url": "${site_prefix}archives/",
         "target": "_self"
@@ -60,18 +70,13 @@ nav = [
 
 social_links = [
     {
-        "name": "Twitter",
-        "url": "https://twitter.com/AlanDecode",
-        "icon": "gi gi-twitter"
-    },
-    {
         "name": "GitHub",
-        "url": "https://github.com/AlanDecode",
+        "url": "https://github.com/tropicalpc",
         "icon": "gi gi-github"
     },
     {
         "name": "Weibo",
-        "url": "https://weibo.com/5245109677/",
+        "url": "https://weibo.com/1595997791",
         "icon": "gi gi-weibo"
     }
 ]
