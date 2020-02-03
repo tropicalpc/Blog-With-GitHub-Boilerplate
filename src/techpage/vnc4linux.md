@@ -6,7 +6,7 @@ date: 2020-02-03 12:00
 status: publish
 author: 雨眠纸
 categories: 
-  - Linux
+  - Maverick
 tags: 
   - 博客
   - GitHub
