@@ -23,19 +23,20 @@
         }
     </script>
     
-<title>标签: Design - 烟雾缭绕的小酒馆</title>
+<title>Linux可视化及远程连接项目实践 - 烟雾缭绕的小酒馆</title>
 <meta name="author" content="雨眠纸" />
-<meta name="description" content="活着其实很好，再吃一颗苹果" />
-<meta property="og:title" content="标签: Design - 烟雾缭绕的小酒馆" />
-<meta property="og:description" content="活着其实很好，再吃一颗苹果" />
+<meta name="description" content="Hello World!" />
+<meta property="og:title" content="Linux可视化及远程连接项目实践 - 烟雾缭绕的小酒馆" />
+<meta property="og:description" content="Hello World!" />
 <meta property="og:site_name" content="烟雾缭绕的小酒馆" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/Blog-With-GitHub-Boilerplate/tag/Design/" />
-<meta property="og:image" content="烟雾缭绕的小酒馆" />
-<meta name="twitter:title" content="标签: Design - 烟雾缭绕的小酒馆" />
-<meta name="twitter:description" content="活着其实很好，再吃一颗苹果" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/Blog-With-GitHub-Boilerplate/archives/my-first-awesome-post/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-02-03T12:00:00-00.00" />
+<meta name="twitter:title" content="Linux可视化及远程连接项目实践 - 烟雾缭绕的小酒馆" />
+<meta name="twitter:description" content="Hello World!" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="/Blog-With-GitHub-Boilerplate/logo.png" />
+<meta name="twitter:image" content="" />
 
 
     
@@ -63,27 +64,129 @@
             <div class="wrapper">
                 
 <main>    
-    
+    <section class="ga-section ga-content">
+        <article class="yue">
+            <h1 class="ga-post_title">Linux可视化及远程连接项目实践</h1>
+            <span class="ga-post_meta ga-mono">
+                <span>雨眠纸</span>
+                <time>
+                    2020-02-03
+                </time>
+                
+                in <a no-style class="category" href="/Blog-With-GitHub-Boilerplate/category/默认分类/">
+                    默认分类
+                </a>
+                
+                
+            </span>
+            <div class="ga-content_body">
+                <h2>项目概括</h2>
+<p><strong>在Linux服务器上启动可视化服务并提供vnc远程连接</strong></p>
+<h2>基本内容</h2>
+<h3>Linux上安装服务及配置</h3>
+<h4>远程连接及使用</h4>
+<h5>客户端安装</h5>
+<p>Linux上安装服务及配置</p>
+<ul>
+<li>centos 7 使用yum -y install vnc4server 提示没有这个软件包，使用apt-get install vnc4server提示没有apt-get命令</li>
+<li>需要安装图形界面yum groups install "GNOME Desktop"或"X Window System"</li>
+</ul>
+<p>防火墙策略</p>
 
-<section id="ga-archive_list" class="ga-section" data-title="#Design">
-    <ul>
-        
-        <li>
-            <h1><a target="_self" class="ga-highlight" href="/Blog-With-GitHub-Boilerplate/archives/typography/">Hello World!</a></h1>
-            <time class="ga-mono" datetime="2019-12-18T16:50:00-00.00">
-                2019-12-18
-            </time>
-        </li>
-        
-    </ul>
+<pre><code>firewall-cmd --permanent --add-service vnc-server
+systemctl restart firewalld.service</code></pre>
+<p>可视化桌面</p>
+
+<pre><code>yum groups install "GNOME Desktop"</code></pre>
+<p>安装vncserver</p>
+
+<pre><code>yum -y install tigervnc-server</code></pre>
+<p>更改配置</p>
+
+<pre><code>cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@\:1.service
+vim /etc/systemd/system/vncserver@\:1.service</code></pre>
+<p>定位到</p>
+
+<pre><code>ExecStart=/usr/sbin/runuser -l &lt;USER&gt; -c "/usr/bin/vncserver %i"
+PIDFile=/home/&lt;USER&gt;/.vnc/%H%i.pid</code></pre>
+<p>修改为登陆账户（比如root）</p>
+
+<pre><code>ExecStart=/usr/sbin/runuser -l root -c "/usr/bin/vncserver %i"
+PIDFile=/root/.vnc/%H%i.pid</code></pre>
+<p>设置密码</p>
+
+<pre><code>vncpasswd</code></pre>
+<p>启动服务</p>
+
+<pre><code>systemctl enable vncserver@:1.service 
+systemctl start vncserver@:1.service #或者 vncserver :1</code></pre>
+<p>查看是否正常启动</p>
+
+<pre><code>ps -ef | grep vnc</code></pre>
+<p>查看端口号</p>
+
+<pre><code>vncserver -list    #X DISPLAY 表示连接的端口号</code></pre>
+<p>关闭服务</p>
+
+<pre><code>systemctl stop vncserver@:1.service  #或者 vncserver -kill :1</code></pre>
+<p>其他问题：
+*防火墙问题（centos 7下）
+原方法中采用关闭防火墙的方式，现在采用对防火墙中加入服务</p>
+
+<pre><code>firewall-cmd --permanent --add-service vnc-server
+systemctl restart firewalld.service</code></pre>
+<p>*分辨率更改问题（未解决）</p>
+<p>编辑配置文件</p>
+
+<pre><code>vim /etc/systemd/system/vncserver@\:1.service
+ExecStart=/sbin/runuser -l root -c "/usr/bin/vncserver %i -geometry 800x600" #会导致黑屏</code></pre>
+<p>重启服务</p>
+
+<pre><code>systemctl daemon-reload</code></pre>
+<p>*增加用户问题</p>
+
+<pre><code>cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:2.service
+systemctl daemon-reload</code></pre>
+<p>启动服务</p>
+
+<pre><code>systemctl start vncserver@:2.service #或者 vncserver :2</code></pre>
+<p>关闭服务</p>
+
+<pre><code>systemctl stop vncserver@:2.service  #或者 vncserver -kill :2</code></pre>
+
+            </div>
+        </article>
+        <div id="ga-tags">
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/Blog-With-GitHub-Boilerplate/tag/博客/">#博客</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/Blog-With-GitHub-Boilerplate/tag/GitHub/">#GitHub</a>
+    </span>
+    
+</div>
+    </section>
+
+    
+<section id="ga-content_pager">
+
+    <div class="next">
+        <h3>没有了</h3>
+        <p class="yue">这是最新的文章</p>
+    </div>
+
+
+    <div class="prev">
+        <a class="ga-highlight" href="/Blog-With-GitHub-Boilerplate/archives/typography/">Hello World!</a>
+        <p class="yue">这是一篇示例文章，在这里你可以看到常用页面元素的显示效果。</p>
+    </div>
+
 </section>
 
-<section class="ga-section ga-mono" id="ga-pager">
-    
-    <span>Page 1 of 1</span>
-    
-</section>
 
+    
 
 </main>
 
