@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/Blog-With-GitHub-Boilerplate/</id><title>烟雾缭绕的小酒馆</title><updated>2020-02-03T03:33:06.943260+08:06</updated><author><name>雨眠纸</name><email>panchen57@live.com</email></author><link href="/Blog-With-GitHub-Boilerplate/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>/Blog-With-GitHub-Boilerplate/logo.png</logo><subtitle>活着其实很好，再吃一颗苹果</subtitle><entry><id>/Blog-With-GitHub-Boilerplate/archives/typography/</id><title>Hello World!</title><updated>2020-02-03T03:33:06.943465+00:00</updated><author><name>AlanDecode</name><email>panchen57@live.com</email><uri>https://tropicalpc.github.io/Blog-With-GitHub-Boilerplate/</uri></author><content>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/Blog-With-GitHub-Boilerplate/</id><title>烟雾缭绕的小酒馆</title><updated>2020-02-03T03:42:48.990780+08:06</updated><author><name>雨眠纸</name><email>panchen57@live.com</email></author><link href="/Blog-With-GitHub-Boilerplate/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>/Blog-With-GitHub-Boilerplate/logo.png</logo><subtitle>活着其实很好，再吃一颗苹果</subtitle><entry><id>/Blog-With-GitHub-Boilerplate/archives/typography/</id><title>Hello World!</title><updated>2020-02-03T03:42:48.990919+00:00</updated><author><name>AlanDecode</name><email>panchen57@live.com</email><uri>https://tropicalpc.github.io/Blog-With-GitHub-Boilerplate/</uri></author><content>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
 &lt;h3&gt;L3 Heading&lt;/h3&gt;
 &lt;h4&gt;L4 Heading&lt;/h4&gt;
 &lt;h5&gt;L5 Heading&lt;/h5&gt;
@@ -78,77 +78,92 @@
 &lt;/table&gt;
 &lt;h2&gt;Link Card&lt;/h2&gt;
 &lt;div class="links"&gt;
-&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content><link href="/Blog-With-GitHub-Boilerplate/archives/typography/" rel="alternate"/><published>2019-12-18T16:50:00+08:06</published></entry><entry><id>/Blog-With-GitHub-Boilerplate/archives/my-first-awesome-post/</id><title>Linux可视化及远程连接项目实践</title><updated>2020-02-03T03:33:06.943405+00:00</updated><author><name>雨眠纸</name><email>panchen57@live.com</email><uri>https://tropicalpc.github.io/Blog-With-GitHub-Boilerplate/</uri></author><content>&lt;h2&gt;项目概括&lt;/h2&gt;
+&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content><link href="/Blog-With-GitHub-Boilerplate/archives/typography/" rel="alternate"/><published>2019-12-18T16:50:00+08:06</published></entry><entry><id>/Blog-With-GitHub-Boilerplate/archives/my-first-awesome-post/</id><title>Linux可视化及远程连接项目实践</title><updated>2020-02-03T03:42:48.990853+00:00</updated><author><name>雨眠纸</name><email>panchen57@live.com</email><uri>https://tropicalpc.github.io/Blog-With-GitHub-Boilerplate/</uri></author><content>&lt;h2&gt;项目概括&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;在Linux服务器上启动可视化服务并提供vnc远程连接&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;基本内容&lt;/h2&gt;
 &lt;h3&gt;Linux上安装服务及配置&lt;/h3&gt;
 &lt;h4&gt;远程连接及使用&lt;/h4&gt;
 &lt;h5&gt;客户端安装&lt;/h5&gt;
-&lt;p&gt;Linux上安装服务及配置&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;centos 7 使用yum -y install vnc4server 提示没有这个软件包，使用apt-get install vnc4server提示没有apt-get命令&lt;/li&gt;
-&lt;li&gt;需要安装图形界面yum groups install "GNOME Desktop"或"X Window System"&lt;/li&gt;
+&lt;li&gt;Linux上安装服务及配置&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;防火墙策略&lt;/p&gt;
-
+&lt;blockquote&gt;&lt;p&gt;centos 7 使用yum -y install vnc4server 提示没有这个软件包，使用apt-get install vnc4server提示没有apt-get命令&lt;/p&gt;
+&lt;p&gt;需要安装图形界面yum groups install "GNOME Desktop"或"X Window System"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;防火墙策略
 &lt;pre&gt;&lt;code&gt;firewall-cmd --permanent --add-service vnc-server
 systemctl restart firewalld.service&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;可视化桌面&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;可视化桌面
 &lt;pre&gt;&lt;code&gt;yum groups install "GNOME Desktop"&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;安装vncserver&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;安装vncserver
 &lt;pre&gt;&lt;code&gt;yum -y install tigervnc-server&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;更改配置&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;更改配置&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;复制文件
 &lt;pre&gt;&lt;code&gt;cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@\:1.service
 vim /etc/systemd/system/vncserver@\:1.service&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;定位到&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;定位到
 &lt;pre&gt;&lt;code&gt;ExecStart=/usr/sbin/runuser -l &amp;lt;USER&amp;gt; -c "/usr/bin/vncserver %i"
 PIDFile=/home/&amp;lt;USER&amp;gt;/.vnc/%H%i.pid&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;修改为登陆账户（比如root）&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;修改为登陆账户（比如root）
 &lt;pre&gt;&lt;code&gt;ExecStart=/usr/sbin/runuser -l root -c "/usr/bin/vncserver %i"
 PIDFile=/root/.vnc/%H%i.pid&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;设置密码&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;设置密码
 &lt;pre&gt;&lt;code&gt;vncpasswd&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;启动服务&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;启动服务
 &lt;pre&gt;&lt;code&gt;systemctl enable vncserver@:1.service 
 systemctl start vncserver@:1.service #或者 vncserver :1&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;查看是否正常启动&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;查看是否正常启动
 &lt;pre&gt;&lt;code&gt;ps -ef | grep vnc&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;查看端口号&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看端口号&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;vncserver -list    #X DISPLAY 表示连接的端口号&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;关闭服务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关闭服务&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;systemctl stop vncserver@:1.service  #或者 vncserver -kill :1&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;其他问题：
-*防火墙问题（centos 7下）
-原方法中采用关闭防火墙的方式，现在采用对防火墙中加入服务&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;其他问题：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;防火墙问题（centos 7下）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;原方法中采用关闭防火墙的方式，现在采用对防火墙中加入服务&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;firewall-cmd --permanent --add-service vnc-server
 systemctl restart firewalld.service&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;*分辨率更改问题（未解决）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分辨率更改问题（未解决）&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;编辑配置文件&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;vim /etc/systemd/system/vncserver@\:1.service
 ExecStart=/sbin/runuser -l root -c "/usr/bin/vncserver %i -geometry 800x600" #会导致黑屏&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;重启服务&lt;/p&gt;
-
+&lt;ul&gt;
+&lt;li&gt;重启服务
 &lt;pre&gt;&lt;code&gt;systemctl daemon-reload&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;*增加用户问题&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;增加用户问题
 &lt;pre&gt;&lt;code&gt;cp /lib/systemd/system/vncserver@.service /etc/systemd/system/vncserver@:2.service
 systemctl daemon-reload&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;启动服务&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;启动服务
 &lt;pre&gt;&lt;code&gt;systemctl start vncserver@:2.service #或者 vncserver :2&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;关闭服务&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;关闭服务
 &lt;pre&gt;&lt;code&gt;systemctl stop vncserver@:2.service  #或者 vncserver -kill :2&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;u&gt;文章使用 GitHub 管理，并通过 GitHub Actions 自动构建与发布！&lt;/u&gt;&lt;/p&gt;
 </content><link href="/Blog-With-GitHub-Boilerplate/archives/my-first-awesome-post/" rel="alternate"/><published>2020-02-03T12:00:00+08:06</published></entry></feed>
