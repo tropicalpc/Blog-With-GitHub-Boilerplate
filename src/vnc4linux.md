@@ -19,11 +19,11 @@ excerpt: 在Linux服务器上启动可视化服务
 
 ## 基本内容
 
-### Linux上安装服务及配置
-#### 远程连接及使用
-##### 客户端安装
-
 * Linux上安装服务及配置
+* 远程连接及使用
+* 客户端安装
+
+#### Linux安装
 
 > centos 7 使用yum -y install vnc4server 提示没有这个软件包，使用apt-get install vnc4server提示没有apt-get命令
 
@@ -82,6 +82,8 @@ vncserver -list    #X DISPLAY 表示连接的端口号
 ```
 systemctl stop vncserver@:1.service  #或者 vncserver -kill :1
 ```
+#### 客户端安装
+自行前往https://www.realvnc.com/en/connect/download/viewer/
 
 #### 其他问题：
 * 防火墙问题（centos 7下）
