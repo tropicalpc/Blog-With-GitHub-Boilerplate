@@ -48,12 +48,12 @@ nav = [
     },
     {
         "name": "技术文档",
-        "url": "${site_prefix}",
+        "url": "${site_prefix}techpage/",
         "target": "_self"
     },
     {
         "name": "随笔",
-        "url": "${site_prefix}",
+        "url": "${site_prefix}novel/",
         "target": "_self"
     },
     {
