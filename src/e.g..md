@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hello World!
-slug: typography
+title: 文章示例
+slug: about
 date: 2019-12-18 16:50
 status: publish
 author: AlanDecode
