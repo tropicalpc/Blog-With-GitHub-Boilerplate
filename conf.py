@@ -47,16 +47,6 @@ nav = [
         "target": "_self"
     },
     {
-        "name": "技术文档",
-        "url": "${site_prefix}techpage/",
-        "target": "_self"
-    },
-    {
-        "name": "随笔",
-        "url": "${site_prefix}novel/",
-        "target": "_self"
-    },
-    {
         "name": "归档",
         "url": "${site_prefix}archives/",
         "target": "_self"
