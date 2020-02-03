@@ -7,9 +7,9 @@ status: publish
 author: AlanDecode
 categories: 
   - Maverick
+  - Dev
 tags:
-  - Design
-  - Typography
+  - theme
 excerpt: 这是一篇示例文章，在这里你可以看到常用页面元素的显示效果。
 ---
 
