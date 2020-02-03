@@ -17,6 +17,6 @@ tags:
 
 ## Contact
 
-Email: hi#imalan.cn (replace # with @)
+Email: panchen57#live.com (replace # with @)
 
-Telegram：[AlanDecode](https://t.me/alandecode)
+Wechat:Tropical_mayday
