@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "/Blog-With-GitHub-Boilerplate/8f21dd503a0deb853690336d1c6bbbef.json"
+            api: "/Blog-With-GitHub-Boilerplate/93bd30f530bcbf925f8bbaa9c90a3542.json"
         }
     </script>
     
@@ -83,12 +83,12 @@
                 <h2>项目概括</h2>
 <p><strong>在Linux服务器上启动可视化服务并提供vnc远程连接</strong></p>
 <h2>基本内容</h2>
-<h3>Linux上安装服务及配置</h3>
-<h4>远程连接及使用</h4>
-<h5>客户端安装</h5>
 <ul>
 <li>Linux上安装服务及配置</li>
+<li>远程连接及使用</li>
+<li>客户端安装</li>
 </ul>
+<h4>Linux安装</h4>
 <blockquote><p>centos 7 使用yum -y install vnc4server 提示没有这个软件包，使用apt-get install vnc4server提示没有apt-get命令</p>
 <p>需要安装图形界面yum groups install "GNOME Desktop"或"X Window System"</p>
 </blockquote>
@@ -135,6 +135,8 @@ systemctl start vncserver@:1.service #或者 vncserver :1</code></pre>
 <li><p>关闭服务</p>
 
 <pre><code>systemctl stop vncserver@:1.service  #或者 vncserver -kill :1</code></pre>
+<p>#### 客户端安装
+自行前往<a href="https://www.realvnc.com/en/connect/download/viewer/">https://www.realvnc.com/en/connect/download/viewer/</a></p>
 </li>
 </ul>
 <h4>其他问题：</h4>
